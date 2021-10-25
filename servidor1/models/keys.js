@@ -42,7 +42,7 @@ const keysSchema = new Schema({
     rol : {
         type : String,
         required: true,
-        enum: ["Administrador", "Gestor"]
+        enum: ["Administrador", "User"]
     },
     createdAt: {
         type : Date,

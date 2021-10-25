@@ -1,13 +1,13 @@
 // import Keys from './keys'
-// import Productos from './productos'
+// import articulos from './articulos'
 // import Categorias from './categorias'
 const Keys = require('./keys')
-const Productos = require('./productos')
+const Articulos = require('./articulos')
 const Categorias = require('./categorias')
 
 
 module.exports = {
     Keys,
-    Productos,
+    Articulos,
     Categorias
 }

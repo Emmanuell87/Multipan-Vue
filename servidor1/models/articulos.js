@@ -1,7 +1,7 @@
-import mongoose from 'mongoose';
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const {Schema} = mongoose;
 
-const D_productosSchema = new Schema({
+const D_articulosSchema = new Schema({
 
     imagen: {
         type : String,
@@ -34,5 +34,5 @@ const D_productosSchema = new Schema({
 
 //convertir a modelo
 
-const D_productos = mongoose.model('Dashboard_productos', D_productosSchema);
-module.exports =  D_productos;
+const D_articulos = mongoose.model('Dashboard_articulos', D_articulosSchema);
+module.exports =  D_articulos;

@@ -1,26 +1,24 @@
 <template>
-  <div id="app">
-    <the-navigation />
-    <router-view/>
-  </div>
+  <v-app>
+    <!-- <header v-if="!['Admin', 'Usuarios', 'Categorias', 'Articulos'].includes($route.name)">
+      <the-navigation />
+    </header> -->
+
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import TheNavigation from './components/TheNavigation.vue'
+import TheNavigation from './components/TheNavigation.vue';
+
 export default {
   components: { TheNavigation },
-  
-}
+  name: 'App',
+
+  data: () => ({
+    //
+  }),
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-
-</style>

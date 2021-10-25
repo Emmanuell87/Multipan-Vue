@@ -3,10 +3,13 @@ const router = express.Router();//Este es un metodo que nos devuelve el objeto r
 
 const KeysController = require('../controllers/KeysController')
 
-//metodos provados
+//metodos privados
 
-console.log(KeysController.add)
 router.post('/add', KeysController.add);
+router.get('/list', KeysController.list);
+router.put('/update', KeysController.update);
+router.put('/enabled', KeysController.enabled);
+router.put('/disabled', KeysController.disabled);
 
 
 
